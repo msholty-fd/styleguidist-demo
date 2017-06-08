@@ -1,0 +1,9 @@
+{
+  "name": "styleguide",
+  "version": "1.0.0",
+  "description": "SharpSpring UI Kit",
+  "main": "index.js",
+  "repository": "git@github.com:sharpspring/styleguide.git",
+  "author": "Harry Gogonis <hgogonis@gmail.com>",
+  "license": "UNLICENSED"
+}
