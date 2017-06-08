@@ -1,13 +1,11 @@
 import React from 'react';
-import DropDownMenu from 'material-ui/DropDownMenu';
+import PropTypes from 'prop-types';
+import MaterialDropDownMenu from 'material-ui/DropDownMenu';
 
-import list from 'styleguide/components/list';
-import dropDownStyles from 'styleguide/components/dropDownMenu';
-
-const propTypes = {
-  ...DropDownMenu.propTypes,
-  children: React.PropTypes.array,
-};
+import list from 'styles/components/list';
+import dropDownStyles from 'styles/components/dropDownMenu';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import theme from 'styles/Theme';
 
 const getStyles = props => ({
   list: Object.assign({}, list, props.listStyle),
@@ -17,23 +15,37 @@ const getStyles = props => ({
   icon: Object.assign({}, dropDownStyles.icon, props.iconStyle),
 });
 
-const SharpspringDropDown = (props) => {
-  const styles = getStyles(props);
+/**
+ * @see http://www.material-ui.com/#/components/dropdown-menu
+ */
+class DropDownMenu extends React.Component {
+  static childContextTypes = {
+    muiTheme: PropTypes.object.isRequired,
+  };
 
-  return (
-    <DropDownMenu
-      {...props}
-      style={styles.root}
-      listStyle={styles.list}
-      underlineStyle={styles.underline}
-      labelStyle={styles.label}
-      iconStyle={styles.icon}
-    >
-      {props.children}
-    </DropDownMenu>
-  );
-};
+  getChildContext() {
+    return {muiTheme: getMuiTheme(theme)};
+  };
 
-SharpspringDropDown.propTypes = propTypes;
+  render() {
+    const styles = getStyles(this.props);
+    const { children, ...others } = this.props;
 
-export default SharpspringDropDown;
+    return (
+      <MaterialDropDownMenu
+        {...others}
+        style={styles.root}
+        listStyle={styles.list}
+        underlineStyle={styles.underline}
+        labelStyle={styles.label}
+        iconStyle={styles.icon}
+      >
+        {children}
+      </MaterialDropDownMenu>
+    );
+  };
+}
+
+DropDownMenu.propTypes = MaterialDropDownMenu.propTypes;
+
+export default DropDownMenu;
