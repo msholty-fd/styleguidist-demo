@@ -1,4 +1,4 @@
-import colors from 'styles/Colors';
+import colors from 'styles/Colors'
 
 export default {
   base: {
@@ -11,11 +11,11 @@ export default {
     lineHeight: '32px',
     fontSize: 13,
     display: 'inline-block',
-    background: `${colors.basicButton}`,
+    background: `${colors.basicButton}`
   },
   icon: {
     color: `${colors.basicButtonText}`,
     lineHeight: 2.1,
-    fontSize: 16,
-  },
-};
+    fontSize: 16
+  }
+}

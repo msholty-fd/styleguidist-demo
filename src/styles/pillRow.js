@@ -6,6 +6,6 @@ export default {
   overflow: 'hidden',
   pillTopLine: {
     display: 'block',
-    marginBottom: '-1px',
-  },
-};
+    marginBottom: '-1px'
+  }
+}

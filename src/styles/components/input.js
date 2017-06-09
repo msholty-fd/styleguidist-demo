@@ -1,4 +1,4 @@
-import colors from 'styles/Colors';
+import colors from 'styles/Colors'
 
 export default {
   border: `2px solid ${colors.inputBorderColor}`,
@@ -7,5 +7,5 @@ export default {
   paddingLeft: 5,
   paddingRight: 0,
   fontSize: 14,
-  lineHeight: 0,
-};
+  lineHeight: 0
+}

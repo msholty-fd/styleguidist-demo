@@ -1,21 +1,21 @@
 module.exports = {
   title: 'SharpSpring Style Guide',
   require: [
-    './styleguide/icons.css',
+    './styleguide/icons.css'
   ],
   sections: [
     {
       name: 'Colors',
-      content: './src/colors/colors.md',
+      content: './src/colors/colors.md'
     },
     {
       name: 'Icons',
       content: './src/icons/README.md',
-      components: './src/icons/**/*.jsx',
+      components: './src/icons/**/*.jsx'
     },
     {
       name: 'Components',
-      components: './src/components/**/*.jsx',
-    },
-  ],
+      components: './src/components/**/*.jsx'
+    }
+  ]
 }

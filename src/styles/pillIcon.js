@@ -1,5 +1,5 @@
 export default {
   position: 'initial',
   color: '#fff',
-  fontSize: 20,
-};
+  fontSize: 20
+}

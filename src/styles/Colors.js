@@ -1,8 +1,8 @@
-export const brandColor = '#84c340';
-export const shadedBrandColor = '#b1e47a';
-export const brandSecondary = '#40acc3';
-export const startNodeFill = 'rgb(241,114,50)';
-export const startNodeStroke = 'rgb(209,98,43)';
+export const brandColor = '#84c340'
+export const shadedBrandColor = '#b1e47a'
+export const brandSecondary = '#40acc3'
+export const startNodeFill = 'rgb(241,114,50)'
+export const startNodeStroke = 'rgb(209,98,43)'
 
 const colors = {
   white: '#ffffff',
@@ -25,7 +25,7 @@ const colors = {
   basicButtonActive: '#8e9797',
   startNodeFill,
   startNodeStroke,
-  chartControlBorder: '#94a5a3',
-};
+  chartControlBorder: '#94a5a3'
+}
 
-export default colors;
+export default colors

@@ -1,3 +1,3 @@
 export default {
-  marginTop: 5,
-};
+  marginTop: 5
+}

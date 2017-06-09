@@ -1,1 +1,1 @@
-export DropDownMenu from './DropDownMenu/DropDownMenu.jsx';
+export DropDownMenu from './DropDownMenu/DropDownMenu.jsx'
