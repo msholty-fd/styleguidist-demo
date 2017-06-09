@@ -1,4 +1,4 @@
 export default {
   borderRadius: 5,
-  padding: '10px 0',
-};
+  padding: '10px 0'
+}

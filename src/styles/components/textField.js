@@ -1,4 +1,4 @@
-import colors from 'styles/Colors';
+import colors from 'styles/Colors'
 
 export default {
   underlineFocus: {
@@ -7,13 +7,13 @@ export default {
     top: 0,
     border: `2px solid ${colors.linkColor}`,
     zIndex: '4',
-    borderRadius: '3px',
+    borderRadius: '3px'
   },
   underline: {
-    border: 'none',
+    border: 'none'
   },
   base: {
     boxSizing: 'border-box',
-    height: '40px',
-  },
-};
+    height: '40px'
+  }
+}

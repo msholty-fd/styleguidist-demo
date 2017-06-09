@@ -1,4 +1,4 @@
-import colors from 'styles/Colors';
+import colors from 'styles/Colors'
 
 export default {
   modalHeader: {
@@ -6,13 +6,13 @@ export default {
     padding: '24px 24px 20px',
     fontSize: 22,
     fontWeight: 400,
-    borderBottom: `1px solid ${colors.borderColor}`,
+    borderBottom: `1px solid ${colors.borderColor}`
   },
   modalBody: {
-    padding: '24px',
+    padding: '24px'
   },
   modalFooter: {
     padding: '10px 20px',
-    borderTop: `1px solid ${colors.borderColor}`,
-  },
-};
+    borderTop: `1px solid ${colors.borderColor}`
+  }
+}

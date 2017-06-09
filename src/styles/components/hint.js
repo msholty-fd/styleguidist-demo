@@ -1,4 +1,4 @@
 export default {
   bottom: 8,
-  left: 12,
-};
+  left: 12
+}

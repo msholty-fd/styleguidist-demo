@@ -1,3 +1,3 @@
 export default {
-  opacity: 0,
-};
+  opacity: 0
+}

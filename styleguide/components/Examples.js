@@ -1,29 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Styled from 'rsg-components/Styled';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-
+import React from 'react'
+import PropTypes from 'prop-types'
+import Styled from 'rsg-components/Styled'
+import injectTapEventPlugin from 'react-tap-event-plugin'
 
 const styles = () => ({
-	// Just default jss-isolate rules
-	root: {
-		fontFamily: 'Roboto, sans-serif',
-	},
-});
+  root: {
+    fontFamily: 'Roboto, sans-serif'
+  }
+})
 
-injectTapEventPlugin();
+injectTapEventPlugin()
 
-export function ExamplesRenderer({ classes, children }) {
-	return (
-		<article className={classes.root}>
-			 {children}
-		</article>
-	);
+export function ExamplesRenderer ({ classes, children }) {
+  return (
+    <article className={classes.root}>
+      {children}
+    </article>
+  )
 }
 
 ExamplesRenderer.propTypes = {
-	classes: PropTypes.object.isRequired,
-	children: PropTypes.node,
-};
+  classes: PropTypes.object.isRequired,
+  children: PropTypes.node
+}
 
-export default Styled(styles)(ExamplesRenderer);
+export default Styled(styles)(ExamplesRenderer)
