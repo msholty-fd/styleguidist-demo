@@ -6,7 +6,9 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 const styles = () => ({
 	// Just default jss-isolate rules
-	root: {},
+	root: {
+		fontFamily: 'Roboto, sans-serif',
+	},
 });
 
 injectTapEventPlugin();
