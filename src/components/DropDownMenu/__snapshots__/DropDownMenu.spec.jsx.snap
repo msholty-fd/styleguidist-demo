@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropDownMenu /> should match the snapshot 1`] = `
+<DropDownMenu
+  iconStyle={
+    Object {
+      "height": 40,
+      "padding": "8px 0 0 20px",
+      "top": 0,
+      "width": 40,
+    }
+  }
+  labelStyle={
+    Object {
+      "color": "#ffffff",
+      "lineHeight": "40px",
+      "maxWidth": 150,
+      "paddingRight": 40,
+    }
+  }
+  listStyle={
+    Object {
+      "borderRadius": 5,
+      "padding": "10px 0",
+    }
+  }
+  maxHeight={300}
+  style={
+    Object {
+      "background": "#a8b0b0",
+      "borderRadius": 3,
+      "height": 40,
+      "lineHeight": 40,
+      "marginRight": 10,
+    }
+  }
+  underlineStyle={
+    Object {
+      "border": 0,
+    }
+  }
+  value={3}
+>
+  <MenuItem
+    primaryText="Never"
+    value={1}
+  />
+  <MenuItem
+    primaryText="Every Night"
+    value={2}
+  />
+  <MenuItem
+    primaryText="Weeknights"
+    value={3}
+  />
+  <MenuItem
+    primaryText="Weekends"
+    value={4}
+  />
+  <MenuItem
+    primaryText="Weekly"
+    value={5}
+  />
+</DropDownMenu>
+`;
