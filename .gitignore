@@ -47,3 +47,7 @@ ngrok
 [._]*.sw[a-p]
 [._]s[a-v][a-z]
 [._]sw[a-p]
+
+# styleguide build
+styleguide/build
+styleguide/index.html
