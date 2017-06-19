@@ -1,0 +1,5 @@
+{
+  "scoutHost": "https://storage.googleapis.com/",
+  "scoutHostLocal": "https://localhost:6060/",
+  "styleguideJS": "styleguide.js"
+}
