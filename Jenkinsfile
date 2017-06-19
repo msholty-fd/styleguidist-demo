@@ -9,11 +9,11 @@ node('k8s') {
 
     stage("deploy") {
         if (env.BRANCH_NAME.equals("master")) {
-            sh("NODE_ENV=production yarn run deploy")
-            sh("NODE_ENV=production yarn run build-scout")
-            sh("NODE_ENV=production yarn run deploy-scout")
+            sh("NODE_ENV=production yarn deploy")
+            sh("NODE_ENV=production yarn build-scout")
+            sh("NODE_ENV=production yarn deploy-scout")
         } else {
-            sh("yarn run deploy")
+            sh("yarn deploy")
         }
     }
 }
