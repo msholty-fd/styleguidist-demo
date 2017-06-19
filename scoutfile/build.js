@@ -1,20 +1,19 @@
 var fs = require('fs');
 var scoutfile = require('scoutfile');
-var hash = process.argv[2];
+var git = require('git-rev');
+var exec = require('child_process').exec;
 
-if (!hash) {
-  console.log('Cannot build scoutfile without a scout hash. Please pass in a scout hash as an argument');
-  process.exit();
+function build(hash) {
+  scoutfile.generate({
+    appModules: [{
+      name: 'styleguide',
+      path: './scoutfile/app-scout.js'
+    }],
+    appConfig: { hash: hash },
+    pretty: true
+  }).then(function(scoutfile) {
+    fs.writeFileSync('./dist/scout.js', scoutfile, 'utf-8');
+  });
 }
-scoutfile.generate({
-  appModules: [{
-    name: 'styleguide',
-    path: './scoutfile/app-scout.js'
-  }],
-  appConfig: {
-    hash,
-  },
-  pretty: true
-}).then(function(scoutfile) {
-  fs.writeFileSync('./dist/scout.js', scoutfile, 'utf-8');
-});
+
+git.short(build);
