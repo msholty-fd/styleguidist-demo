@@ -1229,9 +1229,9 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
-bv-ui-core@0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/bv-ui-core/-/bv-ui-core-0.12.0.tgz#1d22494d9fd24f577b615e21a4f65cba2ca839a1"
+bv-ui-core@0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/bv-ui-core/-/bv-ui-core-0.11.0.tgz#c31bca94fae2547cf6a48174a0287ce83e1fd80e"
 
 bytes@2.3.0:
   version "2.3.0"
@@ -5614,13 +5614,13 @@ schema-utils@^0.3.0:
   dependencies:
     ajv "^5.0.0"
 
-scoutfile@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/scoutfile/-/scoutfile-4.0.0.tgz#67affe84f054f382dc6e1dd7b6f5c2e0789a7957"
+scoutfile@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/scoutfile/-/scoutfile-3.0.3.tgz#c29484bbadca340d5b535c3114893eccff6cd36a"
   dependencies:
     async "2.0.1"
     bluebird "3.4.6"
-    bv-ui-core "0.12.0"
+    bv-ui-core "0.11.0"
     css-loader "0.25.0"
     file-loader "0.9.0"
     handlebars "4.0.5"
