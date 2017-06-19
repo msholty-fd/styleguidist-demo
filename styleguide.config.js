@@ -1,3 +1,5 @@
+var path = require('path')
+
 module.exports = {
   title: 'SharpSpring Style Guide',
   require: [
@@ -17,5 +19,12 @@ module.exports = {
       name: 'Components',
       components: './src/components/**/*.jsx'
     }
-  ]
+  ],
+  dangerouslyUpdateWebpackConfig(webpackConfig, env) {
+    webpackConfig.output = {
+      path: path.join(__dirname, '/dist/'),
+      filename: 'styleguide.js'
+    };
+    return webpackConfig;
+  }
 }
