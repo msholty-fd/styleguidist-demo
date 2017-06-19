@@ -14,7 +14,9 @@ if (styleguideVersion === 'dev') {
   baseStyleguideUrl += '-prod/styleguide/' + appConfig.hash + '/';
 }
 
-loader.loadScript(baseStyleguideUrl + config.styleguideJS);
+loader.loadScript(baseStyleguideUrl + config.styleguideJS, function() {
+  loader.loadScript(baseStyleguideUrl + config.styleguideChunkJS);
+});
 
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);

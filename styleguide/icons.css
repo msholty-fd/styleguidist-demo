@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'sharpspring';
-	src:url("https://app.sharpspring.com/includes/fonts/sharpspring.eot");
-	src:url("https://app.sharpspring.com/includes/fonts/sharpspring#iefix") format('embedded-opentype'),
-  url("https://app.sharpspring.com/includes/fonts/sharpspring.svg") format('svg'),
-	url("https://app.sharpspring.com/includes/fonts/sharpspring.woff") format('woff'),
-	url("https://app.sharpspring.com/includes/fonts/sharpspring.tff") format('truetype');
+	src:url("//app.sharpspring.com/includes/fonts/sharpspring.eot");
+	src:url("//app.sharpspring.com/includes/fonts/sharpspring#iefix") format('embedded-opentype'),
+  url("//app.sharpspring.com/includes/fonts/sharpspring.svg") format('svg'),
+	url("//app.sharpspring.com/includes/fonts/sharpspring.woff") format('woff'),
+	url("//app.sharpspring.com/includes/fonts/sharpspring.tff") format('truetype');
 
 	font-weight: normal;
 	font-style: normal;
