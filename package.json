@@ -15,7 +15,8 @@
     "test": "jest",
     "build-scout": "node scoutfile/build",
     "deploy-scout": "node scoutfile/deploy",
-    "deploy": "yarn build:babel && yarn styleguide:build && node deploy"
+    "deploy": "yarn styleguide:build && node deploy",
+    "release": "yarn build:babel"
   },
   "standard": {
     "parser": "babel-eslint"

@@ -1,15 +1,17 @@
 var loader = require('scoutfile/lib/browser/loader');
 var appConfig = require('scoutfile/lib/browser/appConfig');
 var config = require('json!./config.json');
-var baseStyleguideUrl = config.scoutHost + 'styleguide';
+// TODO: remove front-end bucket reference
+var baseStyleguideUrl = config.scoutHost + 'front-end';
 var styleguideVersion = getQueryVariable('styleguide');
 
 if (styleguideVersion === 'dev') {
   baseStyleguideUrl = config.scoutHostLocal;
 } else if (styleguideVersion) {
-  baseStyleguideUrl += '-dev/' + styleguideVersion + '/';
+  // TODO: remove the styleguide folder altogether here once bucket is created
+  baseStyleguideUrl += '-dev/styleguide/' + styleguideVersion + '/';
 } else {
-  baseStyleguideUrl += '-prod/' + appConfig.hash + '/';
+  baseStyleguideUrl += '-prod/styleguide/' + appConfig.hash + '/';
 }
 
 loader.loadScript(baseStyleguideUrl + config.styleguideJS);
