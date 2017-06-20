@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 
 import MenuItem from 'material-ui/MenuItem'
 import DropDownMenu from './DropDownMenu'
-import { jest, describe, it, expect } from 'global'
+import { describe, it, expect } from 'global'
 
 jest.mock('material-ui/DropDownMenu', () => 'DropDownMenu')
 jest.mock('material-ui/MenuItem', () => 'MenuItem')
