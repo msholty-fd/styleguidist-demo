@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SettingsButton /> should match the snapshot 1`] = `
+<IconButton
+  disableTouchRipple={true}
+  iconStyle={
+    Object {
+      "color": "#ffffff",
+      "height": 14,
+      "width": 14,
+    }
+  }
+  style={
+    Object {
+      "background": "#a8b0b0",
+      "borderRadius": 3,
+      "height": 27,
+      "marginTop": 7,
+      "padding": 7,
+      "width": 50,
+    }
+  }
+>
+  <Settings />
+  <ArrowDropDown />
+</IconButton>
+`;
