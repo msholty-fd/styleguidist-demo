@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should match the snapshot 1`] = `
+<Menu
+  listStyle={
+    Object {
+      "borderRadius": 5,
+      "padding": "10px 0",
+    }
+  }
+  style={
+    Object {
+      "marginTop": 5,
+    }
+  }
+>
+  <MenuItem
+    primaryText="Never"
+    value={1}
+  />
+  <MenuItem
+    primaryText="Every Night"
+    value={2}
+  />
+  <MenuItem
+    primaryText="Weeknights"
+    value={3}
+  />
+  <MenuItem
+    primaryText="Weekends"
+    value={4}
+  />
+  <MenuItem
+    primaryText="Weekly"
+    value={5}
+  />
+</Menu>
+`;

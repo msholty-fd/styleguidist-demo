@@ -5,7 +5,7 @@
 const box = {
   margin: '1em',
   textAlign: 'center',
-  width: '125'
+  width: 125
 };
 
 <div style={{display: 'flex'}}>
@@ -27,7 +27,7 @@ const box = {
 const box = {
   margin: '1em',
   textAlign: 'center',
-  width: '125',
+  width: 125
 };
 
 <div style={{display: 'flex'}}>
