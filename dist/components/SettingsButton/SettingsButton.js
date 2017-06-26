@@ -30,13 +30,15 @@ var _getMuiTheme = require('material-ui/styles/getMuiTheme');
 
 var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
-var _Theme = require('styles/Theme');
+var _Theme = require('../../styles/Theme');
 
 var _Theme2 = _interopRequireDefault(_Theme);
 
-var _SettingsButton = require('./SettingsButton.style');
+var _styles = require('../../styles');
 
-var _SettingsButton2 = _interopRequireDefault(_SettingsButton);
+var _Colors = require('../../styles/Colors');
+
+var _Colors2 = _interopRequireDefault(_Colors);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -45,6 +47,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var styles = {
+  button: {
+    width: 50,
+    height: 27,
+    marginTop: 7,
+    padding: 7,
+    background: _Colors2.default.basicButton,
+    borderRadius: 3
+  },
+  icon: {
+    width: 14,
+    height: 14,
+    color: _styles.Theme.palette.alternateTextColor
+  }
+};
 
 var SettingsButton = function (_React$Component) {
   _inherits(SettingsButton, _React$Component);
@@ -66,8 +84,8 @@ var SettingsButton = function (_React$Component) {
       return _react2.default.createElement(
         _IconButton2.default,
         {
-          iconStyle: _SettingsButton2.default.icon,
-          style: _SettingsButton2.default.button,
+          iconStyle: styles.icon,
+          style: styles.button,
           disableTouchRipple: true
         },
         _react2.default.createElement(_settings2.default, null),

@@ -1,6 +1,6 @@
 {
   "name": "styleguide",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "SharpSpring UI Kit",
   "main": "index.js",
   "repository": "git@github.com:sharpspring/styleguide.git",

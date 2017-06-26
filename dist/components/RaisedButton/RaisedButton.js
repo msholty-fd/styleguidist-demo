@@ -20,21 +20,21 @@ var _RaisedButton = require('material-ui/RaisedButton');
 
 var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
-var _button = require('styles/components/button');
-
-var _button2 = _interopRequireDefault(_button);
-
-var _ripple = require('styles/components/ripple');
-
-var _ripple2 = _interopRequireDefault(_ripple);
-
 var _colors = require('material-ui/styles/colors');
 
 var _getMuiTheme = require('material-ui/styles/getMuiTheme');
 
 var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
-var _Theme = require('styles/Theme');
+var _button = require('../../styles/components/button');
+
+var _button2 = _interopRequireDefault(_button);
+
+var _ripple = require('../../styles/components/ripple');
+
+var _ripple2 = _interopRequireDefault(_ripple);
+
+var _Theme = require('../../styles/Theme');
 
 var _Theme2 = _interopRequireDefault(_Theme);
 
@@ -96,11 +96,8 @@ var RaisedButton = function (_React$Component) {
   return RaisedButton;
 }(_react2.default.Component);
 
+RaisedButton.propTypes = _RaisedButton2.default.propTypes;
 RaisedButton.childContextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-;
-
-RaisedButton.propTypes = _RaisedButton2.default.propTypes;
-
 exports.default = RaisedButton;

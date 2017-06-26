@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MaterialDropDownMenu from 'material-ui/DropDownMenu'
-
-import list from 'styles/components/list'
-import dropDownStyles from 'styles/components/dropDownMenu'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import theme from 'styles/Theme'
+
+import list from '../../styles/components/list'
+import dropDownStyles from '../../styles/components/dropDownMenu'
+import theme from '../../styles/Theme'
 
 const getStyles = props => ({
   list: Object.assign({}, list, props.listStyle),
@@ -18,7 +18,9 @@ const getStyles = props => ({
 /**
  * http://www.material-ui.com/#/components/dropdown-menu
  */
-class DropDownMenu extends React.Component {
+export default class DropDownMenu extends React.Component {
+  static propTypes = MaterialDropDownMenu.propTypes
+
   static childContextTypes = {
     muiTheme: PropTypes.object.isRequired
   };
@@ -45,7 +47,3 @@ class DropDownMenu extends React.Component {
     )
   };
 }
-
-DropDownMenu.propTypes = MaterialDropDownMenu.propTypes
-
-export default DropDownMenu

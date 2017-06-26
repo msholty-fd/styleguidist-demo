@@ -1,4 +1,4 @@
-import colors from 'styles/Colors'
+import colors from '../styles/Colors'
 
 export default {
   base: {

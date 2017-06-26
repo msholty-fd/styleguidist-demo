@@ -1,6 +1,7 @@
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import { grey500 } from 'material-ui/styles/colors'
-import colors, { brandColor } from 'styles/Colors'
+
+import colors, { brandColor } from './Colors'
 
 const theme = getMuiTheme({
   fontFamily: '"Lato", Helvetica, Arial, sans-serif',

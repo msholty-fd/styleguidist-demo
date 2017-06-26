@@ -20,19 +20,19 @@ var _DropDownMenu = require('material-ui/DropDownMenu');
 
 var _DropDownMenu2 = _interopRequireDefault(_DropDownMenu);
 
-var _list = require('styles/components/list');
-
-var _list2 = _interopRequireDefault(_list);
-
-var _dropDownMenu = require('styles/components/dropDownMenu');
-
-var _dropDownMenu2 = _interopRequireDefault(_dropDownMenu);
-
 var _getMuiTheme = require('material-ui/styles/getMuiTheme');
 
 var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
-var _Theme = require('styles/Theme');
+var _list = require('../../styles/components/list');
+
+var _list2 = _interopRequireDefault(_list);
+
+var _dropDownMenu = require('../../styles/components/dropDownMenu');
+
+var _dropDownMenu2 = _interopRequireDefault(_dropDownMenu);
+
+var _Theme = require('../../styles/Theme');
 
 var _Theme2 = _interopRequireDefault(_Theme);
 
@@ -100,11 +100,8 @@ var DropDownMenu = function (_React$Component) {
   return DropDownMenu;
 }(_react2.default.Component);
 
+DropDownMenu.propTypes = _DropDownMenu2.default.propTypes;
 DropDownMenu.childContextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-
-
-DropDownMenu.propTypes = _DropDownMenu2.default.propTypes;
-
 exports.default = DropDownMenu;

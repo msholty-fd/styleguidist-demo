@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MaterialRaisedButton from 'material-ui/RaisedButton'
-
-import button from 'styles/components/button'
-import ripple from 'styles/components/ripple'
 import { white, grey500 } from 'material-ui/styles/colors'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import theme from 'styles/Theme'
+
+import button from '../../styles/components/button'
+import ripple from '../../styles/components/ripple'
+import theme from '../../styles/Theme'
 
 const getStyles = props => ({
   button: Object.assign({}, button, props.buttonStyle),
@@ -15,7 +15,9 @@ const getStyles = props => ({
   labelColor: props.labelColor || white
 })
 
-class RaisedButton extends React.Component {
+export default class RaisedButton extends React.Component {
+  static propTypes = MaterialRaisedButton.propTypes
+
   static childContextTypes = {
     muiTheme: PropTypes.object.isRequired
   };
@@ -40,8 +42,4 @@ class RaisedButton extends React.Component {
       </MaterialRaisedButton>
     )
   }
-};
-
-RaisedButton.propTypes = MaterialRaisedButton.propTypes
-
-export default RaisedButton
+}

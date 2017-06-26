@@ -1,4 +1,4 @@
-import colors from 'styles/Colors'
+import colors from '../Colors'
 
 export default {
   border: `2px solid ${colors.inputBorderColor}`,

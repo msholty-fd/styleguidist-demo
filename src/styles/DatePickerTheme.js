@@ -1,4 +1,4 @@
-import colors, { brandSecondary } from 'styles/Colors'
+import colors, { brandSecondary } from './Colors'
 
 export default {
   DateRange: {

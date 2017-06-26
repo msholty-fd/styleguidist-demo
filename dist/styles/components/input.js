@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Colors = require('styles/Colors');
+var _Colors = require('../Colors');
 
 var _Colors2 = _interopRequireDefault(_Colors);
 

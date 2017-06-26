@@ -10,7 +10,7 @@ var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
 var _colors = require('material-ui/styles/colors');
 
-var _Colors = require('styles/Colors');
+var _Colors = require('./Colors');
 
 var _Colors2 = _interopRequireDefault(_Colors);
 
