@@ -34,8 +34,11 @@ export default class SettingsButton extends React.Component {
   }
 
   render () {
+    const { children, ...others } = this.props
+
     return (
       <IconButton
+        {...others}
         iconStyle={styles.icon}
         style={styles.button}
         disableTouchRipple
