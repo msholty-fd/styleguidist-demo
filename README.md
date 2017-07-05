@@ -1,6 +1,4 @@
-![](http://sharpspring.com/wp-content/uploads/2016/05/ssLogo.png)
-
-# SharpSpring Styleguide
+# Styleguidist Demo
 
 ## Introduction
 
@@ -20,9 +18,6 @@ yarn start
 ```
 
 ## Opening the code in a browser
-
-To see the latest styleguide and latest styleguide component code, go to
-http://lp.sharpspring.com.pages.services/styleguide
 
 This page utilizes a scout architecture. To see other deployed versions, you can type `styleguide=${HASH}` in the styleguide app's url. This will cause the scout to pull the styleguide code from the `styleguide-dev` bucket as opposed to the `styleguide-prod` bucket.
 
